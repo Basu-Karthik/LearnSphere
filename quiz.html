@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - LearnSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>LearnSphere - Quiz</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="learning.html">Learning</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+    <div class="quiz-container">
+        <h2>Select a Topic:</h2>
+        <button class="quiz-button" onclick="startQuiz('python')">Python</button>
+        <button class="quiz-button" onclick="startQuiz('java')">Java</button>
+        <button class="quiz-button" onclick="startQuiz('c')">C</button>
+        
+        <div id="quiz-box" style="display: none;">
+            <h3 id="quiz-question"></h3>
+            <div id="quiz-options"></div>
+            <button id="next-question" onclick="nextQuestion()" style="display: none;">Next Question</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Follow us for more learning experiences:</p>
+    <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="insta.png" alt="Instagram"></a>
+        <a href="#"><img src="youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+    </div>
+</footer>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>
